@@ -1,8 +1,5 @@
 /*
  * Patch pour le chargement de l'autoconf avec l'API géoportail dépréciée
- * 
- * Remarque : debug basé sur https://github.com/opalesurfcasting/api-geoportail-v2
- *
  */
 Geoportal.Catalogue.oldCompleteConfiguration = Geoportal.Catalogue.completeConfiguration;
 Geoportal.Catalogue.completeConfiguration= function(configuration){
