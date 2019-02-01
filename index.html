@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>geoportalMap_simple1.5.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+    <h1 id="example_title">Cartes simples (1.5)</h1>
+    <div id="viewerDiv1" style="width: 500px; height: 500px; background-color: red;"></div>
+    <script type="text/javascript" charset="utf-8" src="https://api.ign.fr/geoportail/api/js/2.1.2/Geoportal.js"></script>
+
+    <!-- <script type="text/javascript" charset="utf-8" src="api-geoportail-v2/lib/geoportal/lib/Geoportal.js"></script> -->
+    <script type="text/javascript" src="geoportal-patch-autoconf.js"></script>
+
+    <script type="text/javascript">
+    var iv1= null;
+    var load1= function() {
+        iv1= Geoportal.load(
+            // div's ID:
+            'viewerDiv1',
+            // API's keys:
+            ['a9k9xq2z7qaffe98zqc6h7i6'],
+            {// map's center :
+                // longitude:
+                lon:2.731525,
+                // latitude:
+                lat:45.833333
+            },
+            5,
+            {
+                language:'fr'
+            }
+        );
+    };
+    window.onload = load1;
+    </script>
+
+  </body>
+</html>
