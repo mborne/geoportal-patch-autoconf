@@ -1,0 +1,3 @@
+[submodule "api-geoportail-v2"]
+	path = api-geoportail-v2
+	url = https://github.com/opalesurfcasting/api-geoportail-v2
