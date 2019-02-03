@@ -42,4 +42,7 @@ Il semble que le problème soit dans la lecture de tous les éléments du namesp
 * ows:SupportedCRS ('EPSG:3857')
 
 
+## Migration vers les nouvelles API
+
+L'ancienne API V2 n'est pas maintenue. Il conviendra de migrer vers les nouvelles API. Voir [Guide de migration depuis l'API v2](https://geoservices.ign.fr/documentation/utilisation_web/migration.html)
 
