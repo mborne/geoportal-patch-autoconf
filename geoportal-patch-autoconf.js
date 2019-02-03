@@ -1,5 +1,6 @@
 /*
  * Patch pour le chargement de l'autoconf avec l'API géoportail dépréciée
+ * Licence : BSD 3-Clause License
  */
 Geoportal.Catalogue.oldCompleteConfiguration = Geoportal.Catalogue.completeConfiguration;
 Geoportal.Catalogue.completeConfiguration= function(configuration){
