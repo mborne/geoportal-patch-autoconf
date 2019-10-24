@@ -24,3 +24,12 @@ Geoportal.Catalogue.completeConfiguration= function(configuration){
     return Geoportal.Catalogue.oldCompleteConfiguration(configuration);
 };
 
+
+/*
+ * Patch réglant le problème de changement de http vers https de certains namespaces
+ */
+const originalParseAutoConf = Geoportal.GeoRMHandler.parseAutoConf;
+Geoportal.GeoRMHandler.parseAutoConf = function (keys, aggregateUrl, callback, resp) {
+  resp.data.xml = resp.data.xml.replace(/="https/g, '="http');
+  return originalParseAutoConf(keys, aggregateUrl, callback, resp);
+};
